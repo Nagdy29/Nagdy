@@ -122,14 +122,14 @@ const page = () => {
               <TabsContent value="Front End" className="w-full">
                 <div className="flex flex-col xl:text-left text-center gap-[30px]">
                   <ScrollArea>
-                    <ul className=" grid grid-cols-1 md:grid-cols-2  xl:gap-[30px]">
+                    <ul className=" grid grid-cols-1 md:grid-cols-2 gap-10  md:gap-12   xl:gap-[30px]">
                       {projects.front.map((el, index) => {
                         return (
                           <li
                             key={index}
                             className="bg-[#232329]  w-[400px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-4 "
                           >
-                            <div class="max-w-md rounded overflow-hidden shadow-lg">
+                            <div class="max-w-md rounded overflow-hidden shadow-lg gap-3">
                               <img
                                 class="w-full"
                                 src={el.image}
@@ -208,7 +208,7 @@ const page = () => {
               <TabsContent value="Mern" className="w-full">
                 <div className="flex flex-col xl:text-left text-center gap-[30px]">
                   <ScrollArea>
-                    <ul className=" grid grid-cols-1 md:grid-cols-2  xl:gap-[30px]">
+                    <ul className=" grid grid-cols-1 md:grid-cols-2 gap-10  xl:gap-[30px]">
                       {projects.mern.map((el, index) => {
                         return (
                           <li

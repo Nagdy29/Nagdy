@@ -200,12 +200,12 @@ const page = () => {
                     {Skills.description}
                   </p>
                   <ScrollArea>
-                    <ul className=" grid grid-cols-2 sm:grid-cols-3   md:grid-cols-4 xl:gap-[30px]">
+                    <ul className=" grid grid-cols-2 sm:grid-cols-3 gap-11   md:grid-cols-4 xl:gap-[30px]">
                       {Skills.items.map((el, index) => {
                         return (
                           <li
                             key={index}
-                            className="bg-[#232329]  w-full h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-4 "
+                            className="bg-[#232329]  w-full h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  "
                           >
                             <span className="text-6xl hover:text-green-600 font-semibold">
                               {" "}
@@ -234,13 +234,15 @@ const page = () => {
                         return (
                           <li
                             key={index}
-                            className="flex items-center justify-center xl:justify-start gap-4"
+                            className="flex flex-col xl:flex-row items-center justify-center xl:justify-start gap-4"
                           >
-                            <span className="text-white/60 font-semibold">
+                            <span className=" font-bold text-[20px]">
                               {" "}
                               {el.name}{" "}
                             </span>
-                            <h2 className="text-xl">{el.value} </h2>
+                            <h2 className=" text-white/60 text-xl font-serif">
+                              {el.value}{" "}
+                            </h2>
                           </li>
                         );
                       })}
